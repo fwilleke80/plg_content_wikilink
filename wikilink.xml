@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="plugin" group="content">
+	<name>PLG_CONTENT_WIKILINK</name>
+	<description>PLG_CONTENT_WIKILINK_XML_DESCRIPTION</description>
+	<author>Frank Willeke</author>
+	<creationDate>2026-04-22</creationDate>
+	<copyright>(C) 2026 Frank Willeke</copyright>
+	<authorUrl>www.frankwilleke.com</authorUrl>
+	<authorEmail>joomla-plugins@frankwilleke.de</authorEmail>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.1</version>
+	<targetplatform name="joomla" version="5\.0|6\.0" />
+	<namespace path="src">Joomla\Plugin\Content\WikiLink</namespace>
+
+	<files>
+		<folder plugin="wikilink">services</folder>
+		<folder>src</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_content_wikilink.ini</language>
+		<language tag="en-GB">language/en-GB/plg_content_wikilink.sys.ini</language>
+		<language tag="de-DE">language/de-DE/plg_content_wikilink.ini</language>
+		<language tag="de-DE">language/de-DE/plg_content_wikilink.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="default_language"
+					type="text"
+					label="PLG_CONTENT_WIKILINK_DEFAULT_LANGUAGE_LABEL"
+					description="PLG_CONTENT_WIKILINK_DEFAULT_LANGUAGE_DESC"
+					default="en"
+					filter="STRING"
+					size="10"
+				/>
+				<field
+					name="open_in_new_tab"
+					type="list"
+					label="PLG_CONTENT_WIKILINK_OPEN_IN_NEW_TAB_LABEL"
+					description="PLG_CONTENT_WIKILINK_OPEN_IN_NEW_TAB_DESC"
+					default="1"
+					filter="INT"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
