@@ -83,6 +83,10 @@ Examples:
 - `en` → `https://en.wikipedia.org/...`
 - `de` → `https://de.wikipedia.org/...`
 
+### Open links in new tab
+
+If set to "Yes", Wikipedia links created with this plugin will open in a new tab (with `noopener` and `noreferrer`). Otherwise, they are opened in the same tab.
+
 ## Installation
 
 1. Zip the plugin folder (plg_content_wikilink)

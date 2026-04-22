@@ -8,7 +8,7 @@
 	<authorUrl>www.frankwilleke.com</authorUrl>
 	<authorEmail>joomla-plugins@frankwilleke.de</authorEmail>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<targetplatform name="joomla" version="5\.0|6\.0" />
 	<namespace path="src">Joomla\Plugin\Content\WikiLink</namespace>
 
